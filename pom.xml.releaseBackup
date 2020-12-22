@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>erod.springframework</groupId>
 	<artifactId>sfg-pet-clinic</artifactId>
-	<version>0.0.4</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>sfg-pet-clinic</name>
 	<description>Pet clinic project for Spring Boot </description>
 
@@ -45,8 +45,7 @@
 		<module>sfg-pet-clinic-web</module>
 	</modules>
 	<scm>
-	    <url>https://github.com/erikson879/sf-pet-clinic</url>
 		<developerConnection>scm:git:git@github.com:erikson879/sf-pet-clinic.git</developerConnection>
-	  <tag>sfg-pet-clinic-0.0.4</tag>
+	  <tag>sfg-pet-clinic-0.0.3</tag>
   </scm>
 </project>
