@@ -46,6 +46,5 @@
 	</modules>
 	<scm>
 		<developerConnection>scm:git:git@github.com:erikson879/sf-pet-clinic.git</developerConnection>
-	  <tag>sfg-pet-clinic-0.0.1</tag>
   </scm>
 </project>
