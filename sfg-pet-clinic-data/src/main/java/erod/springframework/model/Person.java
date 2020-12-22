@@ -1,6 +1,10 @@
 package erod.springframework.model;
 
-public class Person {
+public class Person extends BaseEntity{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String firtsName;
 	private String lastName;
 	public String getFirtsName() {
