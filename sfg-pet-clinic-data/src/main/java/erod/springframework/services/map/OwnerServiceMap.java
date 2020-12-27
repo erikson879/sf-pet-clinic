@@ -3,9 +3,9 @@ package erod.springframework.services.map;
 import java.util.Set;
 
 import erod.springframework.model.Owner;
-import erod.springframework.services.CrudService;
+import erod.springframework.services.OwnerService;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Integer> implements CrudService<Owner, Integer>{
+public class OwnerServiceMap extends AbstractMapService<Owner, Integer> implements OwnerService{
 
 	@Override
 	public Owner save(Owner type) {
@@ -32,5 +32,8 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Integer> implemen
 		super.delete(object);
 	}
 	
-	
+	@Override
+	public Owner findByLastName(String lastName) {
+		return null;
+	}
 }

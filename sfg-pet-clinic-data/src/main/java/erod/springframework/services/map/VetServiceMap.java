@@ -3,9 +3,9 @@ package erod.springframework.services.map;
 import java.util.Set;
 
 import erod.springframework.model.Vet;
-import erod.springframework.services.CrudService;
+import erod.springframework.services.VetService;
 
-public class VetServiceMap extends AbstractMapService<Vet, Integer> implements CrudService<Vet, Integer>{
+public class VetServiceMap extends AbstractMapService<Vet, Integer> implements VetService{
 
 	@Override
 	public Vet save(Vet type) {

@@ -1,10 +1,11 @@
 package erod.springframework.services.map;
 
 import java.util.Set;
-import erod.springframework.model.Pet;
-import erod.springframework.services.CrudService;
 
-public class PetServiceMap extends AbstractMapService<Pet, Integer> implements  CrudService<Pet,Integer>{
+import erod.springframework.model.Pet;
+import erod.springframework.services.PetService;
+
+public class PetServiceMap extends AbstractMapService<Pet, Integer> implements  PetService{
 
 	@Override
 	public Pet save(Pet type) {
