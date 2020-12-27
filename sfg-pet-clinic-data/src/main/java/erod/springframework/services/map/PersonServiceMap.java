@@ -2,9 +2,11 @@ package erod.springframework.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import erod.springframework.model.Person;
 import erod.springframework.services.CrudService;
-
+@Service
 public class PersonServiceMap extends AbstractMapService<Person, Integer> implements  CrudService<Person, Integer>{
 
 	@Override

@@ -2,9 +2,11 @@ package erod.springframework.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import erod.springframework.model.Owner;
 import erod.springframework.services.OwnerService;
-
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Integer> implements OwnerService{
 
 	@Override

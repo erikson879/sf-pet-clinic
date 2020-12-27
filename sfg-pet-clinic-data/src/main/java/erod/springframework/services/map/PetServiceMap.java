@@ -2,9 +2,11 @@ package erod.springframework.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import erod.springframework.model.Pet;
 import erod.springframework.services.PetService;
-
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Integer> implements  PetService{
 
 	@Override
