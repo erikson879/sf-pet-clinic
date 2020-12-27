@@ -5,13 +5,13 @@ public class Person extends BaseEntity{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private String firtsName;
+	private String firstName;
 	private String lastName;
-	public String getFirtsName() {
-		return firtsName;
+	public String getFirstName() {
+		return firstName;
 	}
-	public void setFirtsName(String firtsName) {
-		this.firtsName = firtsName;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 	public String getLastName() {
 		return lastName;
