@@ -11,7 +11,7 @@ public class PersonServiceMap extends AbstractMapService<Person, Integer> implem
 
 	@Override
 	public Person save(Person type) {
-		return super.save(type.getId(), type);
+		return super.save(type);
 	}
 
 	@Override
