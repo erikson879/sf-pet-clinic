@@ -1,13 +1,19 @@
 package erod.springframework.model;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Owner extends Person {
 	
-	private Set<Pet> pets;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private Set<Pet> pets = new HashSet<Pet>();
 	private String addres;
 	private String city;
 	private String telephone;
+	
 	public Set<Pet> getPets() {
 		return pets;
 	}
@@ -32,7 +38,4 @@ public class Owner extends Person {
 	public void setTelephone(String telephone) {
 		this.telephone = telephone;
 	}
-
-	
-
 }

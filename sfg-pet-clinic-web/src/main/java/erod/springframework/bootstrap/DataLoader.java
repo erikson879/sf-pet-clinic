@@ -1,17 +1,18 @@
 package erod.springframework.bootstrap;
 
+import java.time.LocalDate;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import erod.springframework.model.Owner;
+import erod.springframework.model.Pet;
 import erod.springframework.model.PetType;
 import erod.springframework.model.Vet;
 import erod.springframework.services.OwnerService;
 import erod.springframework.services.PetTypeService;
 import erod.springframework.services.VetService;
-import erod.springframework.services.map.OwnerServiceMap;
-import erod.springframework.services.map.VetServiceMap;
 
 /**
 *@author erod 2020-12-27
@@ -35,16 +36,36 @@ public class DataLoader implements CommandLineRunner	{
 		PetType savedDogPetType = petTypeService.save(dog);
 		
 		PetType cat = new PetType();
-		dog.setName("Cat");
+		cat.setName("Cat");
 		PetType savedCatPetType = petTypeService.save(cat);
 		
 		Owner owner1 = new Owner();
 		owner1.setFirstName("Michael");
 		owner1.setLastName("Weston");
+		owner1.setAddres("123 Brickel");
+		owner1.setCity("Miami");
+		owner1.setTelephone("123123131");
+		
+		Pet mikePet = new Pet();
+		mikePet.setPetType(savedDogPetType);
+		mikePet.setOwner(owner1);
+		mikePet.setBirthDate(LocalDate.now());
+		mikePet.setName("Rosco");
+		owner1.getPets().add(mikePet);
 		ownerService.save(owner1);
 		Owner owner2 = new Owner();
 		owner2.setFirstName("Fabiola");
 		owner2.setLastName("Glenanne");
+		owner2.setAddres("123 Brickel");
+		owner2.setCity("Miami");
+		owner2.setTelephone("123123131");
+		
+		Pet fabiolaPet = new Pet();
+		fabiolaPet.setPetType(savedCatPetType);
+		fabiolaPet.setOwner(owner2);
+		fabiolaPet.setBirthDate(LocalDate.now());
+		fabiolaPet.setName("Just cat");
+		owner2.getPets().add(fabiolaPet);
 		ownerService.save(owner2);
 		System.out.println("Loaded Owners...");
 		Vet vet1 = new Vet();
