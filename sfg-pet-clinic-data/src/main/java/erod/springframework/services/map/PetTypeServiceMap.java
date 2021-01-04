@@ -20,25 +20,21 @@ public class PetTypeServiceMap extends AbstractMapService<PetType, Integer> impl
 
 	@Override
 	public PetType findById(Integer id) {
-		// TODO Auto-generated method stub
 		return super.findById(id);
 	}
 
 	@Override
 	public PetType save(PetType object) {
-		// TODO Auto-generated method stub
 		return super.save(object);
 	}
 
 	@Override
 	public void deleteById(Integer id) {
-		// TODO Auto-generated method stub
 		super.deleteById(id);
 	}
 
 	@Override
 	public void delete(PetType object) {
-		// TODO Auto-generated method stub
 		super.delete(object);
 	}
 	

@@ -5,9 +5,9 @@ import java.util.Set;
 import org.springframework.stereotype.Service;
 
 import erod.springframework.model.Specialty;
-import erod.springframework.services.SpecialtiesService;
+import erod.springframework.services.SpecialtyService;
 @Service
-public class SpecialtyServiceMap extends AbstractMapService<Specialty, Integer> implements SpecialtiesService{
+public class SpecialtyServiceMap extends AbstractMapService<Specialty, Integer> implements SpecialtyService{
 
 	@Override
 	public Set<Specialty> findAll() {
